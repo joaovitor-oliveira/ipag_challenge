@@ -1,5 +1,5 @@
 import pytest
-from ipag_challenge.challenge_01.src.utils import operations
+from challenge_01.src.utils import operations
 
 
 @pytest.mark.parametrize(

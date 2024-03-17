@@ -1,4 +1,5 @@
-from ipag_challenge.challenge_01.src.utils import operations
+from challenge_01.src.utils import operations
+from rich import print
 
 
 if __name__ == "__main__":
@@ -20,9 +21,9 @@ if __name__ == "__main__":
             print(
                 f"Resultado: {round(answer, 2)}"
                 if answer != "undefined"
-                else "Não é possível dividir por zero!"
+                else ":warning-emoji: [bold red blink] Não é possível dividir por zero![/]"
             )
         except ValueError:
-            print("Números inválidos!\n")
+            print(":warning-emoji: [bold red blink] Números inválidos![/]\n")
 
         choice = input("Deseja realizar outro cálculo? [Y/n] ")
