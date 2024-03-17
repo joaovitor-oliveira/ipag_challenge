@@ -25,5 +25,7 @@ if __name__ == "__main__":
             )
         except ValueError:
             print(":warning-emoji: [bold red blink] Números inválidos![/]\n")
+        except KeyError:
+            print(":warning-emoji: [bold red blink] Opção inválida![/]\n")
 
         choice = input("Deseja realizar outro cálculo? [Y/n] ")
