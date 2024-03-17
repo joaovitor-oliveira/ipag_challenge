@@ -14,7 +14,8 @@ jobs:
           python-version: 3.11
       - run: pip install -r requirements.txt
       - run: flake8
-      - run: python -m pytest
+      - run: python -m pytest -v
+      - run: python -m pytest --cov
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:

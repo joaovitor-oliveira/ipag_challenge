@@ -1,4 +1,4 @@
-from entry_level_challenge.challenge_01.src.utils import operations
+from ipag_challenge.challenge_01.src.utils import operations
 
 
 if __name__ == "__main__":
