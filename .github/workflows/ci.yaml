@@ -12,10 +12,16 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: 3.11
-      - run: pip install -r requirements.txt
-      - run: flake8
-      - run: python -m pytest -v
-      - run: python -m pytest --cov
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run linter
+        run: flake8
+      - name: Run pytest
+        run: python -m pytest -v
+      - name: Run pytest cov
+        run: python -m pytest --cov
+      - name: Run tox
+        run: tox -e py
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
