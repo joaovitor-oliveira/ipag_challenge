@@ -1,0 +1,28 @@
+name: ci-workflow
+on: 
+  pull_request:
+    branches:
+      '*'
+jobs:
+  check-application:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run linter
+        run: flake8
+      - name: Run pytest
+        run: python -m pytest -v
+      - name: Run pytest cov
+        run: python -m pytest --cov
+      - name: Run tox
+        run: tox -e py
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
