@@ -1,6 +1,7 @@
-import time
-import random
+import secrets
 from rich import print
+
+MAX_NUMBER = 100
 
 
 def game():
@@ -10,8 +11,7 @@ def game():
         "Tente [u]adivinhar[/] qual é o número [u]oculto.[/] Tal número é um inteiro entre 1 e 100\n"
     )
 
-    random.seed(time.time())
-    target = random.randint(1, 101)
+    target = secrets.randbelow(MAX_NUMBER) + 1
     count = 0
     while True:
         try:

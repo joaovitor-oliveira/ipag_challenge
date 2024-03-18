@@ -4,12 +4,12 @@ import challenge_04.src.main as main
 
 
 MOCK_INPUT = ['50', '25', '35', 'w', '39']
-MOCK_TARGET = 39
+MOCK_TARGET = 38
 
 
 @pytest.fixture
 def mock(mocker):
-    mocker.patch.object(main.random, "randint", return_value=MOCK_TARGET)
+    mocker.patch.object(main.secrets, "randbelow", return_value=MOCK_TARGET)
     mocker.patch("builtins.input", side_effect=MOCK_INPUT)
 
 
