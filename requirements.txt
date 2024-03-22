@@ -38,8 +38,10 @@ Pygments==2.17.2
 pyproject-api==1.6.1
 pytest==8.1.1
 pytest-cov==4.1.0
+pytest-mock==3.12.0
 PyYAML==6.0.1
 rich==13.7.1
+setuptools==69.2.0
 six==1.16.0
 stack-data==0.6.3
 tomli==2.0.1
