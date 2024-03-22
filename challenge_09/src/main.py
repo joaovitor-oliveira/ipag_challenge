@@ -13,24 +13,26 @@ def clear() -> None:
 
 
 def is_numeric(input: str) -> bool:
-    tmp = input.replace(".", "")
-    return tmp.isnumeric()
+    try:
+        float(input)
+        return True
+    except ValueError:
+        return False
 
 
 def validate_input(value: str, down_payment: str, rate: str, monthly_payments: str) -> list:
     notifications = []
 
-    if not is_numeric(value) or float(value) < 0:
-        notifications.append("Valor inválido.")
+    inputs = {
+        "Valor": (value, lambda x: is_numeric(x) and float(x) > 0),
+        "Valor de entrada": (down_payment, lambda x: is_numeric(x) and float(x) >= 0),
+        "Taxa de juros": (rate, lambda x: is_numeric(x) and float(x) >= 0),
+        "Período": (monthly_payments, lambda x: x.isnumeric() and int(x) > 0)
+    }
 
-    if not is_numeric(down_payment) or float(down_payment) < 0:
-        notifications.append("Valor de entrada inválido.")
-
-    if not is_numeric(rate) or float(rate) < 0:
-        notifications.append("Taxa de juros inválida.")
-
-    if not monthly_payments.isnumeric() or int(monthly_payments) < 0:
-        notifications.append("Período inválido.")
+    for param, (input, validation) in inputs.items():
+        if not validation(input):
+            notifications.append(f"{param} inválido.")
 
     return notifications
 
