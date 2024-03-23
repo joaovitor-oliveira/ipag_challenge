@@ -1,6 +1,4 @@
 import requests
-from rich import print
-from rich.table import Table
 
 
 class GithubAPI:
@@ -9,26 +7,41 @@ class GithubAPI:
         self.BASE_URL = "https://api.github.com"
 
     def get_user_repositories(self, username: str) -> dict:
+        '''
+        Get user repositories
+
+        Args:
+            username (str): A github username.
+
+        Returns:
+            dict: User repositories.
+        '''
         URL = f"{self.BASE_URL}/users/{username}/repos"
 
         response = requests.get(URL)
 
         if response.status_code == 200:
-            return response.json()
-        else:
-            print("Erro ao buscar usuário. Usuário inexistente ou incorreto.")
+            return {"has_user": True, "data": response.json()}
 
-    def generate_report(self, username: str) -> None:
+        return {"has_user": False, "data": []}
+
+    def get_repositories_info(self, username: str) -> dict:
+        '''
+        Get the users repositiries with the information of name, description, language and stars.
+
+        Args:
+            username (str): A github username.
+
+        Returns:
+            dict: User repositories info.
+        '''
         repos = self.get_user_repositories(username)
+        result = []
 
-        table = Table(show_header=True, header_style="bold", show_lines=True)
-        table.add_column("Nome")
-        table.add_column("Descrição")
-        table.add_column("Linguagem")
-        table.add_column("Stars")
+        if not repos["has_user"]:
+            return repos
 
-        if repos:
-            for rep in repos:
-                table.add_row(rep["name"], rep["description"], rep["language"], f"{rep["stargazers_count"]}")
-        print(f"[reverse b]Repositórios do usuário: {username}[/]")
-        print(table)
+        for rep in repos["data"]:
+            result.append([rep["name"], rep["description"], rep["language"], rep["stargazers_count"]])
+
+        return {"has_user": True, "data": result}
