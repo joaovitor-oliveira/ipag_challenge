@@ -1,8 +1,10 @@
 asttokens==2.4.1
 black==24.3.0
 cachetools==5.3.3
+certifi==2024.2.2
 cfgv==3.4.0
 chardet==5.2.0
+charset-normalizer==3.3.2
 click==8.1.7
 colorama==0.4.6
 coverage==7.4.4
@@ -13,6 +15,7 @@ executing==2.0.1
 filelock==3.13.1
 flake8==7.0.0
 identify==2.5.35
+idna==3.6
 iniconfig==2.0.0
 ipython==8.18.1
 jedi==0.19.1
@@ -22,7 +25,9 @@ mccabe==0.7.0
 mdurl==0.1.2
 mypy-extensions==1.0.0
 nodeenv==1.8.0
+numpy==1.26.4
 packaging==24.0
+pandas==2.2.1
 parso==0.8.3
 pathspec==0.12.1
 pexpect==4.9.0
@@ -39,7 +44,11 @@ pyproject-api==1.6.1
 pytest==8.1.1
 pytest-cov==4.1.0
 pytest-mock==3.12.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
 PyYAML==6.0.1
+requests==2.31.0
+requests-mock==1.11.0
 rich==13.7.1
 setuptools==69.2.0
 six==1.16.0
@@ -48,5 +57,7 @@ tomli==2.0.1
 tox==4.14.1
 traitlets==5.14.2
 typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
 virtualenv==20.25.1
 wcwidth==0.2.13
