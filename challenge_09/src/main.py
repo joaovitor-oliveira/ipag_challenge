@@ -125,7 +125,7 @@ def main():
                 financing = Financing(PriceMethod(value-down_payment, monthly_payments, rate / 100))
                 generate_simple_report(financing)
                 print("")
-                generate_complete_report(financing, value, monthly_payments, rate / 100)
+                generate_complete_report(financing, value-down_payment, monthly_payments, rate / 100)
             else:
                 print(":warning: [red b blink]Valor de entrada maior ou igual ao do financiamento.[/]\n")
         else:
