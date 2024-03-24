@@ -85,3 +85,25 @@ def test_given_a_no_digit_password_when_calls_validate_then_has_error(input):
 
     assert validator.has_errors() is True
     assert "A senha deve ter pelo menos um número." in validator.get_errors()
+
+
+@pytest.mark.parametrize(
+    "input",
+    [
+        "",
+        "!@#$%ˆ"
+    ]
+)
+def test_given_an_all_invalid_passowrds_when_calls_validate_then_returns_all_errors(input):
+    validator = PasswordValidator()
+    expected = [
+        "A senha deve ter no mínimo 8 caracteres.",
+        "A senha deve ter pelo menos uma letra maiúscula.",
+        "A senha deve ter pelo menos uma letra minúscula.",
+        "A senha deve ter pelo menos um número."
+    ]
+
+    validator.validate(input)
+
+    assert validator.has_errors() is True
+    assert validator.get_errors() == expected

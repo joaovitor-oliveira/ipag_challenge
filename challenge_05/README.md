@@ -11,10 +11,9 @@ Valide a senha e informe ao usuário se ela é válida ou não.
 
 ## :spiral_notepad: NOTAS
 
-A solução foi pensada e projetada tendo como inspiração o `Notification Pattern`. Essa adaptação funcionou bem para o problema atual e há oportunidades de evolução.
+A solução foi pensada e desenvolvida com base no `Notification Pattern`, cujo princípio é retornar **todos** os erros de validação de uma vez, em vez de apresentar apenas um *único* erro e permitir que o usuário continue cometendo erros até passar por todas as condições. Essa abordagem adaptativa mostrou-se eficaz para resolver o problema atual e oferece oportunidades para futuras melhorias.
 
-A adição de novas condições pode ser feita facilmente e alterações podem ser realizadas a partir de um dicionário de condições, além de adaptações ao método `validate`, para que ele não se torne gigantesco e mantenha fácil manutenibilidade.
-
+A inclusão de novas condições pode ser facilmente realizada, e alterações podem ser feitas por meio de um dicionário de condições, permitindo adaptações ao método `validate` sem que ele se torne excessivamente extenso, garantindo assim uma manutenção mais simples.
 
 ## Como executar
 
