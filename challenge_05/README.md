@@ -15,15 +15,6 @@ A solução foi pensada e projetada tendo como inspiração o `Notification Patt
 
 A adição de novas condições pode ser feita facilmente e alterações podem ser realizadas a partir de um dicionário de condições e adaptação ao método `validate` para que o mesmo não tome proporções gigantescas e possua fácil manutenibilidade.
 
-Exemplo:
-
-```python
-CONSTRAINTS = {
-    "LEN": ´Função de validação de quantidade de caracteres´,
-    "UPPER": ´Função de validação de caractere em caixa alta´,
-    ...
-}
-```
 
 ## Como executar
 

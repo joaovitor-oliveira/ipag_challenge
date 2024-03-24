@@ -1,5 +1,5 @@
 import pytest
-from challenge_02.src.min_max_number import min_and_max
+from challenge_02.src.main import min_and_max
 
 
 @pytest.mark.parametrize(

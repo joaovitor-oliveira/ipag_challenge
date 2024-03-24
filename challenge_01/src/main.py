@@ -13,11 +13,12 @@ if __name__ == "__main__":
                 "adição[+] subtração[-] multiplicação[*] divisão[/]\n"
             )
 
+            operation = operations[_operation]
             x, y = input(
                 "Insira dois números separados por espaço: "
                 ).split()
 
-            answer = operations[_operation](float(x), float(y))
+            answer = operation(float(x), float(y))
             print(
                 f"Resultado: {round(answer, 2)}"
                 if answer != "undefined"
