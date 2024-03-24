@@ -1,5 +1,7 @@
 FROM python:3.9-slim
 
+RUN useradd -ms /bin/bash python
+
 USER python
 
 WORKDIR /home/python/app
