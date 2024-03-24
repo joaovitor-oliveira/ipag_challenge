@@ -21,9 +21,7 @@ Decidi deixar a validação dentro do método calcular área pois tais métodos 
 - A validação seria no construtor partindo do princípio do DDD de que se os parâmetros de criação do objeto não forem válidos tal objeto nem deve ser criado;
 - Por fim, seria só criar a instancia do objeto e chamar seu método de calcular área.
 
-Além disso, é perceptível a **facilidade** de adição de uma nova forma geométrica e a sua utilização na classe `main.py`;
-
-Por fim, o código foi pensado de forma a não possuir diversos `Ifs` ou `switch case` e é perceptível a facilidade de adição de uma nova forma geométrica e a sua utilização na classe `main.py`;
+O código foi pensado de forma a não possuir diversos `Ifs` ou `switch case` e é perceptível a **facilidade** de adição de uma nova forma geométrica e a sua utilização na classe `main.py`;
 
 
 ## Como executar
