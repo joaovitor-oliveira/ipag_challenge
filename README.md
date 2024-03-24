@@ -1,24 +1,25 @@
 # Desafio iPag - Desenvolvedor(a) Júnior
 
 
-## Como este projeto está organizado
+## Organização do Projeto
 
-- Este desafio possui 10 exercícios de programação, as soluções para os exercícios serão através de um Pull Request e compiladas na branch `develop`.
+Este desafio consiste em 10 exercícios de programação, cujas soluções serão submetidas por meio de Pull Requests e compiladas na branch `develop`.
 
-- Cada desafio possui sua pasta, exemplo: **challenge_01**. Dentro da pasta do desafio haverão outra duas, compostas por `src` e `tests`.
+Cada exercício possui sua própria pasta, por exemplo: `challenge_01`. Dentro de cada pasta de exercício, há duas subpastas, chamadas `src` e `tests`.
 
-- Os Pull Requests possuem um fluxo de **CI** via `Github Actions` para validação de **linter**, **testes** e qualidade de código via **SonarCloud**;
+Os Pull Requests seguem um fluxo de **CI** (Continuous Integration) via Github Actions para validação de linting, testes e qualidade de código através do **SonarCloud**.
 
-- As soluções para os exercícios foram feitas em **Python** e funcionam a partir da versão 3.9.6;
+As soluções para os exercícios foram implementadas em Python e são compatíveis com a versão 3.9.6 ou superior.
 
-- É possível executar tanto em ambiente local quanto no docker. As intruções estarão logo abaixo mas também estão presentes no readme de todos os exercícios.
+É possível executar as soluções tanto localmente quanto no `Docker`. As instruções estão disponíveis abaixo e também no README de cada exercício.
 
-### GOSTARIA QUE O CÓDIGO FOSSE ANALISADO CUIDADOSAMENTE VISANDO SUA QUALIDADE, MANUTENIBILIDADE E AS IDEIAS DAS SOLUÇÕES PROPOSTAS
+Gostaria que o código fosse analisado cuidadosamente, visando sua qualidade, manutenibilidade e as ideias das soluções propostas.
 
-### TODOS OS EXERCÍCIOS POSSUEM TESTES
+**Todos** os exercícios incluem testes automatizados.
 
+Feedbacks são muito bem-vindos e serão apreciados!
 
-Feedbacks são muito bem-vindos e serão bem apreciados!
+**Estou disponível para conversarmos sobre as soluções.**
 
 
 ## Como executar
