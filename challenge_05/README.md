@@ -11,9 +11,9 @@ Valide a senha e informe ao usuário se ela é válida ou não.
 
 ## :spiral_notepad: NOTAS
 
-A solução foi pensada e projetada tendo como inspiração o `Notification Pattern`. Tal adaptação funcionou bem para o atual problema e há oportunidades de evolução.
+A solução foi pensada e projetada tendo como inspiração o `Notification Pattern`. Essa adaptação funcionou bem para o problema atual e há oportunidades de evolução.
 
-A adição de novas condições pode ser feita facilmente e alterações podem ser realizadas a partir de um dicionário de condições e adaptação ao método `validate` para que o mesmo não tome proporções gigantescas e possua fácil manutenibilidade.
+A adição de novas condições pode ser feita facilmente e alterações podem ser realizadas a partir de um dicionário de condições, além de adaptações ao método `validate`, para que ele não se torne gigantesco e mantenha fácil manutenibilidade.
 
 
 ## Como executar

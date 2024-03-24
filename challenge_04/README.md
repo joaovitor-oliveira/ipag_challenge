@@ -11,9 +11,9 @@ Dê dicas ao usuário, informando se o seu palpite está "acima", "abaixo" ou se
 
 ## :spiral_notepad: NOTAS
 
-A solução é trivial. No entanto, foi tomado um cuidado com o **seed** da geração do número a ser adivinhado com o objetivo de que tal número seja `diferente` a cada execução do script.
+A solução é trivial. No entanto, foi tomado um cuidado com a **seed** da geração do número a ser adivinhado, com o objetivo de garantir que tal número seja diferente a cada execução do script.
 
-:warning: Queria destacar a importância de aferir **qualidade de código**. Durante o desenvolvimento fiz a utilização da função `random.randint()` do python para gerar os números pseudoaleatórios. No entanto, apesar de ter funcionado normalmente o **SonarCloud** me trouxe uma falha de segurança relacioando ao uso desse método. Dessa forma, refatorei o meu código para utiliziar o método `secrets.randbelow()`, onde a solução e o teste continuaram funcionando normalmente e foi aprovado pelo SonarCloud.
+:warning: Quero destacar a importância da avaliação da **qualidade do código**. Durante o desenvolvimento, utilizei a função `random.randint()` do Python para gerar os números pseudoaleatórios. No entanto, apesar de ter funcionado corretamente, o **SonarCloud** identificou uma falha de segurança relacionada ao uso desse método. Dessa forma, refatorei meu código para utilizar o método `secrets.randbelow()`, no qual a solução e os testes continuaram funcionando normalmente e foi aprovado pelo SonarCloud.
 
 ## Como executar
 

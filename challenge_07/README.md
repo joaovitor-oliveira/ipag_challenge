@@ -15,11 +15,11 @@ Caso o controle selecionado não seja compatível com a TV, o programa deve exib
 
 ## :spiral_notepad: NOTAS
 
-A solução foi pensada tendo como base o `Design Pattern` **Bridge**.
+A solução foi concebida com base no `Design Pattern` **Bridge**.
 
-As interfaces do Controle e da TV são descritas dessa forma pois não há uma interface oficial no python. Além disso, cada controle e cada tv possuem uma implementação para si pois podem haver especializações específicas de cada um.
+As interfaces do Controle e da TV são descritas dessa forma porque não há uma interface oficial no Python. Além disso, cada controle e cada TV possuem uma implementação própria, pois podem existir especializações específicas para cada um.
 
-Apesar de utilizar o controle injetando a dependência de uma TV, é possível adaptar para que a sua utilização possa vir atrelada a um método `attach` com o objetivo de sincronizar uma TV ao controle alvo. Dessa forma, o controle pode passar a _existir_ sem estar composto por uma tv.
+Apesar de usar o controle injetando a dependência de uma TV, é possível adaptar para que sua utilização seja vinculada a um método `attach`, com o objetivo de sincronizar uma TV ao controle alvo. Dessa forma, o controle pode passar a existir sem estar diretamente associado a uma TV.
 
 
 ## Como executar

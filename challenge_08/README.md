@@ -15,9 +15,9 @@ Tipo de produto com maior receita de cada país.
 
 ## :spiral_notepad: NOTAS
 
-Para esta solução foi utilizado o `pandas`, um famoso pacote Python utilizado para análise e manipulação de dados.
+Para esta solução, foi utilizado o `pandas`, um famoso pacote Python amplamente utilizado para análise e manipulação de dados.
 
-Como o arquivo é único e estático, a solução se tornou mais simples. Foi feita a criação de uma classe `Sales` com os métodos de estatísticas solicitados.
+Dado que o arquivo é único e estático, a solução se tornou mais simples. Foi criada uma classe `Sales` com os métodos de estatísticas solicitados.
 
 
 ## Como executar

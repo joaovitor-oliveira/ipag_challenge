@@ -13,13 +13,13 @@ O programa deve permitir a simulação de diferentes cenários de financiamento.
 
 ## :spiral_notepad: NOTAS
 
-Para esse exercício foi tomado um cuidado com as classes de forma que o método **Price** (e futuros métodos) implementem a interface `FincancingMethod`, e a classe `Financing` recebe uma instância dessa interface como injeção de dependência. Dessa forma, é possível criar um outro método de financiamento como o Sac, por exemplo, e injetar na classe Financing para que o mesmo seja utilizado.
+Para este exercício, foram tomados cuidados específicos com as classes, de modo que o método **Price** (e futuros métodos) implemente a interface `FinancingMethod`, e a classe `Financing` receba uma instância dessa interface como injeção de dependência. Isso possibilita a criação de outros métodos de financiamento, como o **SAC**, por exemplo, e sua injeção na classe `Financing` para serem utilizados.
 
-A classe possui fácil manutenibilidade e baixo acoplamento por conta da inversão de controle somada a injeção de dependência.
+A classe possui fácil manutenção e baixo acoplamento devido à inversão de controle e à injeção de dependência.
 
-Além disso, no resultado final foi adicionado a tabela de parcelas mensais junto aos calculos do juros, da amortização e saldo devedor.
+Além disso, no resultado final, foi adicionada uma tabela de parcelas mensais junto aos cálculos dos juros, da amortização e do saldo devedor.
 
-Decidi manter os parâmetros idênticos aos da fórmula informada pensando em desenvolvimento orientado ao domínio. Neste exemplo, considerei um contexto onde as pessoas que utilizarão a classe têm como linguagem padrão as abreviações das fórmulas. No entanto, a classe está bem documentada descrevendo cada um dos parâmtros bem como as funcionalidades dos métodos da classe. 
+Decidi manter os parâmetros idênticos aos da fórmula informada, pensando no desenvolvimento orientado ao domínio. Neste exemplo, considerei um contexto em que as pessoas que utilizarão a classe estão familiarizadas com as abreviações das fórmulas. No entanto, a classe está bem documentada, descrevendo cada um dos parâmetros, bem como as funcionalidades dos métodos da classe.
 
 
 ## Como executar

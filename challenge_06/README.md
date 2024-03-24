@@ -11,9 +11,9 @@ O programa deve permitir a navegação, ordenação e edição da lista de taref
 
 ## :spiral_notepad: NOTAS
 
-A solução foi pensada e projetada em POO e a sua execução está no arquivo `main.py`.
+A solução foi pensada e projetada utilizando Programação Orientada a Objetos (POO), e sua execução está no arquivo `main.py`.
 
-A cada inserção, alteração ou conclusão de tarefas, a lista é ordenada baseada no status de conclusão e na prioridade. De qualquer forma, decidi deixar a opção no menu para que fique explícito que há essa funcionalidade.
+A cada inserção, alteração ou conclusão de tarefas, a lista é ordenada com base no status de conclusão e na prioridade. No entanto, decidi deixar a opção no menu para que fique explícito que essa funcionalidade está disponível.
 
 
 ## Como executar

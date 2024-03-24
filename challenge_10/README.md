@@ -11,7 +11,7 @@ O script deve exibir o nome, descrição, linguagem e quantidade de estrelas de 
 
 ## :spiral_notepad: NOTAS
 
-A solução para a criação do script para buscar repositórios no github é bem simples. O **endpoint** da api pública do github utilizado **não** precisa de autenticação. No entanto, **há um limite de 60 requisições/hora**, mas acredito ser suficiente para esse exercício.
+A solução para criar o script de busca de repositórios no GitHub é bastante simples. O endpoint da API pública do GitHub utilizado **não** requer autenticação. No entanto, há um limite de **60 requisições por hora**, mas acredito que seja suficiente para este exercício.
 
 
 ## Como executar

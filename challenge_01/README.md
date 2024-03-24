@@ -11,9 +11,9 @@ Exiba o resultado da operação na tela.
 
 ## :spiral_notepad: NOTAS
 
-A solução está escrita de tal forma que **facilita** a adição de novos métodos de cálculo.
+A solução está escrita de tal forma que facilita a adição de novos métodos de cálculo.
 
-Por exemplo: caso queira adicionar uma operação de exponenciação é necessário apenas construir uma nova função e adicionar em `operations`.
+Por exemplo, se você deseja adicionar uma operação de exponenciação, é necessário apenas construir uma nova função e adicioná-la em `operations`.
 
 
 ## Como executar

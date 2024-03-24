@@ -11,18 +11,17 @@ O usuário deve escolher a forma geométrica e informar os dados necessários pa
 
 ## :spiral_notepad: NOTAS
 
-A solução foi pensada e feita utilizando **POO** e com a utilização dos métodos de forma estática, ou seja, não é necessários instanciar o objeto. 
+A solução foi pensada e implementada utilizando Programação Orientada a Objetos (POO), com a utilização dos métodos de forma estática, ou seja, não é necessário instanciar o objeto.
 
-A classe `Shape` é a abstração de uma forma geométrica, todas as outras devem herdar deste tipo.
+A classe `Shape` é a abstração de uma forma geométrica; todas as outras devem herdar desta classe.
 
-Decidi deixar a validação dentro do método calcular área pois tais métodos são estáticos e, portanto, teria que utilizar o método de validação no arquivo `main.py`. Uma **solução** para a situação é:
+Decidi incluir a validação dentro do método calcular área, pois tais métodos são estáticos e, portanto, teria que utilizar a validação no arquivo `main.py`. Uma solução para essa situação seria:
 
 - Os métodos serem métodos de instância;
-- A validação seria no construtor partindo do princípio do DDD de que se os parâmetros de criação do objeto não forem válidos tal objeto nem deve ser criado;
-- Por fim, seria só criar a instancia do objeto e chamar seu método de calcular área.
+- A validação seria realizada no construtor, partindo do princípio do DDD de que, se os parâmetros de criação do objeto não forem válidos, tal objeto nem deve ser criado;
+- Por fim, seria apenas criar a instância do objeto e chamar seu método de calcular área.
 
-O código foi pensado de forma a não possuir diversos `Ifs` ou `switch case` e é perceptível a **facilidade** de adição de uma nova forma geométrica e a sua utilização na classe `main.py`;
-
+O código foi projetado para não possuir vários `ifs` ou `switch case`, e é perceptível a facilidade de adição de uma nova forma geométrica e sua utilização na classe `main.py`.
 
 ## Como executar
 
