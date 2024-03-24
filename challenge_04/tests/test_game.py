@@ -19,6 +19,6 @@ def test_game(capsys, mock):
 
     out, err = capsys.readouterr()
 
-    assert "Errou!" in out
+    assert out.count("Errou!") == 3
     assert "Número inválido, tente novamente." in out
     assert "Parabéns! Você acertou em 4 tentativas." in out
