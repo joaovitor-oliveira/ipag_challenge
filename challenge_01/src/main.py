@@ -8,14 +8,14 @@ if __name__ == "__main__":
     choice = "y"
     while choice.lower() == "y":
         try:
-            x, y = input(
-                "Insira dois números separados por espaço: "
-                ).split()
-
             _operation = input(
                 "Escolha a operação desejada: "
                 "adição[+] subtração[-] multiplicação[*] divisão[/]\n"
             )
+
+            x, y = input(
+                "Insira dois números separados por espaço: "
+                ).split()
 
             answer = operations[_operation](float(x), float(y))
             print(
