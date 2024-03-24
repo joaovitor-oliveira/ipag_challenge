@@ -167,18 +167,18 @@ def main():
     task_list = TaskList()
     clear()
     print(":memo: Boas vindas a TODO List da [green]iPag![/] :pen:")
-    show_menu()
 
     while True:
-        choice = input()
-
-        if choice in ACTIONS:
+        try:
+            show_menu()
+            choice = input()
             if ACTIONS[choice] == "exit":
                 break
             ACTIONS[choice](task_list)
-            show_menu()
-        else:
+        except KeyError:
             print(":warning-emoji: [bold red blink]Opção inválida, tente novamente.[/]\n")
+        except ValueError:
+            print(":warning-emoji: [bold red blink]Índice inválido, tente novamente.[/]\n")
 
 
 if __name__ == "__main__":

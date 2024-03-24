@@ -13,7 +13,12 @@
 
 - É possível executar tanto em ambiente local quanto no docker. As intruções estarão logo abaixo mas também estão presentes no readme de todos os exercícios.
 
+### GOSTARIA QUE O CÓDIGO FOSSE ANALISADO CUIDADOSAMENTE VISANDO SUA QUALIDADE, MANUTENIBILIDADE E AS IDEIAS DAS SOLUÇÕES PROPOSTAS
+
 ### TODOS OS EXERCÍCIOS POSSUEM TESTES
+
+
+Feedbacks são muito bem-vindos e serão bem apreciados!
 
 
 ## Como executar
