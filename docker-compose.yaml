@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  python-environment:
+    build: .
+    container_name: python-environment
+    volumes:
+      - .:/home/python/app
