@@ -49,7 +49,7 @@ def generate_simple_report(financing: Financing) -> None:
     table.add_column("Juros efetivos mensais")
     table.add_column("Valor total")
 
-    table.add_row(f"{monthly_payment}", f"{tec}", f"{emr}", f"{total_value}")
+    table.add_row(f"R$ {monthly_payment}", f"R$ {tec}", f"{emr} %", f"R$ {total_value}")
     print(table)
 
 

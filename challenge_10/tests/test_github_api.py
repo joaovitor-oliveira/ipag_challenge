@@ -49,7 +49,7 @@ def test_given_a_valid_username_when_call_get_repositories_info_then_success(git
 
     expected_response = {
         "has_user": True,
-        "data": [["value1", "value2", "value3", 1]]
+        "data": [{"name": "value1", "description": "value2", "language": "value3", "stargazers_count": 1}]
         }
 
     requests_mock.get(f"https://api.github.com/users/{username}/repos", status_code=200, json=expected_api_returns)

@@ -42,6 +42,11 @@ class GithubAPI:
             return repos
 
         for rep in repos["data"]:
-            result.append([rep["name"], rep["description"], rep["language"], rep["stargazers_count"]])
+            result.append({
+                "name": rep["name"],
+                "description": rep["description"],
+                "language": rep["language"],
+                "stargazers_count": rep["stargazers_count"]
+            })
 
         return {"has_user": True, "data": result}
