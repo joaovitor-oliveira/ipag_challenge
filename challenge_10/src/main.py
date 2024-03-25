@@ -39,7 +39,7 @@ def github_search():
             rep["name"],
             rep["description"],
             rep["language"],
-            f"{rep["stargazers_count"]}"
+            str(rep["stargazers_count"])
         )
 
     print(f"[reverse b]Repositórios do usuário: {username}[/]")
