@@ -35,7 +35,12 @@ def github_search():
     table.add_column("Stars")
 
     for rep in info["data"]:
-        table.add_row(rep["name"], rep["description"], rep["language"], f"{rep["stargazers_count"]}")
+        table.add_row(
+            rep["name"],
+            rep["description"],
+            rep["language"],
+            f"{rep["stargazers_count"]}"
+        )
 
     print(f"[reverse b]Repositórios do usuário: {username}[/]")
     print(table)
